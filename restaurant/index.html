@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Hunger</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+            <nav class="header__menu">
+                <div class="header__menu_items">
+                    <div class="header__menu_items__link"><a>HOME</a></div>
+                    <div class="header__menu_items__link"><a href="#about">ABOUT</a></div>
+                    <div class="header__menu_items__link"><a href="#team">TEAM</a></div>
+                    <div class="header__menu_items__link"><a href="#booking">BOOKING</a></div>
+                </div>
+                <img class="header__menu_logo" src="./assets/logo.svg" alt="logo">
+                <div class="header__menu_items">
+                    <div class="header__menu_items__link"><a href="#menu">MENU</a></div>
+                    <div class="header__menu_items__link"><a href="#galerie">GALERIE</a></div>
+                    <div class="header__menu_items__link"><a href="#events">EVENTS</a></div>
+                    <div class="header__menu_items__link"><a href="#contact">CONTACT</a></div>
+                </div>
+            </nav>
+            <div class="header__info">
+                <div class="header__info__lines">
+                    <div class="header__info__lines_left_and_right"></div>
+                    <div class="header__info__lines_center">
+                        <div class="header__info__lines_center__big_line"></div>
+                        <div class="header__info__lines_center__circle">
+                            <div class="header__info__lines_center__circle__button">
+                                <img src="./assets/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="header__info__lines_center__small_line"></div>
+                    </div>
+                    <div class="header__info__lines_left_and_right"></div>
+                </div>
+            </div>
+            <div class="header__description">
+                <div class="header__description_copy_rights">
+                    Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+                </div>
+                <div class="header__description_main_block">
+                    <div class="header__description_main_block__subtitle">RESTAURANT</div>
+                    <h1 class="header__description_main_block__title">hungry people</h1>
+                    <div class="header__description_main_block__rectangle"></div>
+                    <div class="header__description_main_block__buttons">
+                        <button class="header__description_main_block__buttons_bookTable">BOOK TABLE</button>
+                        <button class="header__description_main_block__buttons_explore">EXPLORE</button>
+                    </div>
+                </div>
+                <div class="header__description_social_nets">
+                    <div class="header__description_social_nets__facebook"></div>
+                    <div class="header__description_social_nets__twitter"></div>
+                    <div class="header__description_social_nets__instagram"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="aboutUs">
+        <div class="wrapper">
+            <div class="aboutUs__wrapper">
+                <div class="aboutUs__wrapper_info">
+                    <h2 class="aboutUs__wrapper_info__title">
+                        about us
+                    </h2>
+                    <div class="header__description_main_block__rectangle"></div>
+                    <div class="aboutUs__wrapper_info__subtitle">
+                        <b>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                        </b>
+                    </div>
+                    <div class="aboutUs__wrapper_info__text">
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                        facilisis semper laoreet.
+                    </div>
+                </div>
+                <div class="aboutUs__wrapper_image">
+                    <img src="./assets/about-img.png" alt="fire">
+                    <div class="aboutUs__wrapper_image__square"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <div class="wrapper">
+            <div class="team__info">
+                <div class="team__info__lines">
+                    <div class="team__info__lines_left_and_right"></div>
+                    <div class="team__info__lines_center">
+                        <div class="team__info__lines_center__big_line"></div>
+                    </div>
+                    <div class="team__info__lines_left_and_right"></div>
+                </div>
+            </div>
+            <div class="team__headline">
+                OUR TEAM
+            </div>
+            <div class="team__wrapper">
+                <div class="team__wrapper__info">
+                    <h2 class="team__wrapper__info_title">MASTER CHEF</h2>
+                    <div class="header__description_main_block__rectangle"></div>
+                    <div class="team__wrapper__info_subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                    </div>
+                    <div class="team__wrapper__info_text">
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                        facilisis semper laoreet.
+                    </div>
+                </div>
+                <div class="team__wrapper__image">
+                    <div class="team__wrapper__image__square"></div>
+                    <img src="./assets/Rectangle.png" alt="cook">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="booking" class="booking">
+        <div class="wrapper">
+            <div class="booking__wrapper">
+                <div class="booking__wrapper__form">
+                    <h2 class="booking__wrapper__form_title">book a table</h2>
+                    <div class="booking__wrapper__form_rectangle header__description_main_block__rectangle"></div>
+                    <div class="booking__wrapper__form_inputs">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Phone">
+                        <div class="booking__wrapper__form_inputs_list people">
+                            <input type="text" placeholder="People" list="numebr_of_people">
+                        </div>
+                        <datalist id="numebr_of_people">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6+</option>
+                           </datalist>
+                        <input type="text" placeholder="Date (mm/dd)">
+                        <div class="booking__wrapper__form_inputs_list">
+                            <input type="time" placeholder="Time">
+                        </div>
+                        <button class="booking__wrapper__form_inputs_button">BOOK NOW</button>
+                    </div>
+
+                </div>
+                <div class="booking__wrapper__image">
+                    <img src="./assets/booking.png" alt="fire">
+                    <div class="booking__wrapper__image__square"></div>
+                </div>
+            </div>
+            <div class="booking__text">
+                <b>
+                    Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782
+                </b>
+            </div>
+        </div>
+    </section>
+    <section class="specialties">
+        <div class="wrapper">
+            <div class="specialties__info">
+                <div class="specialties__info__lines">
+                    <div class="specialties__info__lines_left_and_right"></div>
+                    <div class="specialties__info__lines_center">
+                        <div class="specialties__info__lines_center__big_line"></div>
+                    </div>
+                    <div class="specialties__info__lines_left_and_right"></div>
+                </div>
+            </div>
+            <div class="specialties__headline">
+                specialties
+            </div>
+            <div class="specialties__wrapper">
+                <div class="specialties__wrapper__info">
+                    <h2 class="specialties__wrapper__info_title">chocolate pancakes</h2>
+                    <div class="header__description_main_block__rectangle"></div>
+                    <div class="specialties__wrapper__info_subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                    </div>
+                    <div class="specialties__wrapper__info_text">
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                        facilisis semper laoreet.
+                    </div>
+                </div>
+                <div class="specialties__wrapper__image">
+                    <div class="specialties__wrapper__image__square"></div>
+                    <img src="./assets/Rectangle_icecream.png" alt="cook">
+                </div>
+            </div>
+            <div class="specialties_dots">
+                <div class="specialties_dots__dot"></div>
+                <div class="specialties_dots__dot specialties_dots__dot_active"></div>
+                <div class="specialties_dots__dot"></div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="menu">
+        <div class="wrapper">
+            <div class="menu__wrapper">
+                <div class="menu__wrapper__info">
+                    <div class="menu__wrapper__info_title">
+                        DELICIOUS MENU
+                    </div>
+                    <div class="menu__wrapper__info_rectangle"></div>
+                    <div class="menu__wrapper__info_subtitle">
+                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</b>
+                    </div>
+                    <div class="menu__wrapper__info_header_of_menu">
+                        <div class="menu__wrapper__info_header_of_menu__item">
+                            SOUPE
+                        </div>
+                        <div class="menu__wrapper__info_header_of_menu__item">
+                            PIZZA
+                        </div>
+                        <div class="menu__wrapper__info_header_of_menu__item">
+                            PASTA
+                        </div>
+                        <div class="menu__wrapper__info_header_of_menu__item">
+                            DESERT
+                        </div>
+                        <div class="menu__wrapper__info_header_of_menu__item">
+                            WINE
+                        </div>
+                        <div class="menu__wrapper__info_header_of_menu__item">
+                            BEER
+                        </div>
+                        <div class="menu__wrapper__info_header_of_menu__item">
+                            DRINKS
+                        </div>
+                    </div>
+                    <div class="menu__wrapper__info_menu">
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                        <div class="menu__wrapper__info_menu_item">
+                            <div class="menu__wrapper__info_menu_item__title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                            <div class="menu__wrapper__info_menu_item__description">Integer ullamcorper neque eu purus euismod</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="events" class="events">
+        <div class="wrapper">
+            <div class="events__info">
+                <div class="events__info__lines">
+                    <div class="events__info__lines_left_and_right"></div>
+                    <div class="events__info__lines_center">
+                        <div class="events__info__lines_center__big_line"></div>
+                    </div>
+                    <div class="events__info__lines_left_and_right"></div>
+                </div>
+            </div>
+            <div class="events__wrapper">
+                <div class="events__wrapper__title">
+                    PRIVATE EVENTS
+                </div>
+                <div class="events__wrapper__photos">
+                    <div class="events__wrapper__photos__wedding">
+                        <div class="events__wrapper__photos__wedding__square"></div>
+                        <div class="events__wrapper__photos__wedding__card">
+                            <div class="events__wrapper__photos__wedding__card_header">
+                                <div class="events__wrapper__photos__wedding__card_header__headline">weddings</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events__wrapper__photos__corpEvent">
+                        <div class="events__wrapper__photos__corpEvent__card">
+                            <div class="events__wrapper__photos__corpEvent__card_header">
+                                <div class="events__wrapper__photos__corpEvent__card_header__headline">corporate pzrties</div>
+                            </div>
+                        </div>
+                        <div class="events__wrapper__photos__corpEvent__square"></div>
+                    </div>
+                </div>
+                <div class="events__wrapper__worktime">
+                    <p>For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the contact form.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="galerie" class="photoGalerie">
+        <div class="photoGalerie__wrapper">
+            <img src="./assets/Rectangle_img_1.png" alt="">
+            <img src="./assets/Rectangle_img_2.png" alt="">
+            <img src="./assets/Rectangle_img_3.png" alt="">
+            <img src="./assets/Rectangle_img_4.png" alt="">
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="wrapper">
+            <div class="contact__wrapper">
+                <div class="contact__wrapper__headline">
+                    CONTACT
+                </div>
+                <div class="contact__wrapper__rectangle"></div>
+                <div class="contact__wrapper__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                </div>
+                <div class="contact__wrapper__form">
+                    <input class="contact__wrapper__form_num1" type="text" placeholder="Nume">
+                    <input class="contact__wrapper__form_num2" type="email" placeholder="Email">
+                    <input class="contact__wrapper__form_num3" type="text" placeholder="Phone">
+                    <textarea class="contact__wrapper__form_textarea" name="" id="" cols="80" rows="20" placeholder="Message"></textarea>
+                    <div class="contact__wrapper__form_info">
+                        <img src="./assets/contacts.svg" alt="contacts">
+                    </div>
+                    <button class="contact__wrapper__form_button">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map_block">
+        <div id="map" style="width: 100%; height: 457px"></div>
+    </section>
+    <footer class="footer">
+        <div>&copy; Copyright <b>Mindblister</b> 2019</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

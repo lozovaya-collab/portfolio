@@ -1,0 +1,16 @@
+.photoGalerie {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & img {
+            width: 25%;
+        }
+    }
+}

@@ -1,0 +1,280 @@
+.events {
+    width: 100%;
+    height: 675px;
+    background: url('../assets/specialty\'s-bg__photo.png');
+    background-position: center;
+    &__info {
+        z-index: 1;
+        position: absolute;
+        top: 4420px;
+        width: 80em;
+        height: 675px;
+        &__lines {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 42.25em;
+            &_left_and_right {
+                width: 13.4375em;
+            }
+            &_center {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 53.5625em;
+                border-left: 0.0625em solid $line;
+                border-right: 0.0625em solid $line;
+                &__big_line {
+                    margin-top: 0;
+                    width: 0.05em;
+                    height: 100%;
+                    background-color: $line;
+                    border: none;
+                }
+            }
+        }
+    }
+    &__wrapper {
+        z-index: 15;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include Caption;
+            letter-spacing: 0.5em;
+        }
+        &__photos {
+            height: 475px;
+            width: 1111px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            &__corpEvent {
+                position: relative;
+                height: 100%;
+                width: 600px;
+                display: flex;
+                flex-direction: row;
+                &__square {
+                    z-index: 600;
+                    top: 116px;
+                    left: 391px;
+                    position: absolute;
+                    width: 250px;
+                    height: 250px;
+                    border: 20px solid #E8C300;
+                    box-sizing: border-box;
+                    filter: drop-shadow(0px 0px 100px #000000);
+                    border-radius: 5px;
+                }
+                &__card {
+                    width: 475px;
+                    height: 475px;
+                    background: url('../assets/Rectangle_corp.png') no-repeat;
+                    background-position: center;
+                    filter: drop-shadow(0px 0px 50px #000000);
+                    border-radius: 5px;
+                    &_header {
+                        float: left;
+                        height: 100%;
+                        width: 80px;
+                        background: #000000;
+                        border-radius: 5px 0px 0px 5px;
+                        padding: 20px;
+                        box-sizing: border-box;
+                        &__headline {
+                            z-index: 500;
+                            width: 287px;
+                            margin-left: -123px;
+                            margin-top: 307px;
+                            display: flex;
+                            @include Heading_2;
+                            align-items: center;
+                            text-indent: 20px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            transform: rotate(-90deg);
+                            font-size: 24px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+            &__wedding {
+                position: relative;
+                height: 100%;
+                width: 600px;
+                display: flex;
+                flex-direction: row;
+                &__square {
+                    z-index: 600;
+                    top: 116px;
+                    left: -85px;
+                    position: absolute;
+                    width: 250px;
+                    height: 250px;
+                    border: 20px solid #E8C300;
+                    box-sizing: border-box;
+                    filter: drop-shadow(0px 0px 100px #000000);
+                    border-radius: 5px;
+                }
+                &__card {
+                    width: 475px;
+                    height: 475px;
+                    background: url('../assets/Rectangle_wedding.png') no-repeat;
+                    background-position: center;
+                    filter: drop-shadow(0px 0px 50px #000000);
+                    border-radius: 5px;
+                    &_header {
+                        float: right;
+                        height: 100%;
+                        width: 80px;
+                        background: #000000;
+                        border-radius: 0px 5px 5px 0px;
+                        padding: 18px;
+                        box-sizing: border-box;
+                        &__headline {
+                            z-index: 500;
+                            display: flex;
+                            @include Heading_2;
+                            align-items: center;
+                            text-indent: 20px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            transform: rotate(90deg);
+                            font-size: 24px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &__worktime {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+            width: 100%;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 100%;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+@media only screen and (max-width: 1295px) and (min-width: 770px) {
+    .events {
+        height: 1152px;
+        &__info {
+            top: 5647px;
+            width: 100%;
+            height: 875px;
+            &__lines {
+                width: 100%;
+                height: 100%;
+                &_left_and_right {
+                    width: 0;
+                }
+                &_center {
+                    border-left: none;
+                    border-right: none;
+                }
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+            &__photos {
+                flex-direction: column;
+                margin-top: 20px;
+                height: 1592px;
+                width: 768px;
+                &__wedding {
+                    &__square {
+                        left: -65px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 320px) {
+    .events {
+        height: 816px;
+        &__info {
+            top: 5647px;
+            width: 100%;
+            height: 875px;
+            &__lines {
+                width: 100%;
+                height: 100%;
+                &_left_and_right {
+                    width: 0;
+                }
+                &_center {
+                    border-left: none;
+                    border-right: none;
+                }
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+            &__photos {
+                flex-direction: column;
+                margin-top: 20px;
+                height: 698px;
+                width: 320px;
+                &__corpEvent {
+                    width: 243px;
+                    height: 336px;
+                    &__square {
+                        top: 155px;
+                        left: 128px;
+                        width: 150px;
+                        height: 150px;
+                    }
+                    &__card {
+                        width: 243px;
+                        height: 243px;
+                        &_header {
+                            &__headline {
+                                margin-top: 80px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                &__wedding {
+                    width: 243px;
+                    height: 336px;
+                    &__square {
+                        top: 153px;
+                        left: -33px;
+                        width: 150px;
+                        height: 150px;
+                    }
+                    &__card {
+                        width: 243px;
+                        height: 243px;
+                        &_header {
+                            &__headline {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

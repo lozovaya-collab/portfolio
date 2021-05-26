@@ -1,0 +1,227 @@
+.contact {
+    width: 100%;
+    height: 647px;
+    background-color: $main_color;
+    &__wrapper {
+        &__headline {
+            text-align: center;
+            @include Heading_2;
+            margin-top: 2px;
+        }
+        &__rectangle {
+            margin-top: 11px;
+            width: 60.91px;
+            height: 5px;
+            border-radius: 5px;
+            background: #E8C300;
+        }
+        &__subtitle {
+            height: 78px;
+            width: 565px;
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.6px;
+        }
+        &__form {
+            padding-top: 49.68px;
+            display: grid;
+            grid-template-columns: 215px 215px 215px 215px 215px 203px;
+            grid-template-rows: 65px 65px 65px 65px;
+            &_num1 {
+                cursor: pointer;
+                width: 412px;
+                height: 54px;
+                grid-column: 1/ 2;
+                border-radius: 5px;
+                background: #E5E5E5;
+                color: rgba(51, 51, 51, 0.5);
+                border: none;
+                outline: none;
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                text-indent: 20px;
+            }
+            &_num2 {
+                cursor: pointer;
+                width: 412px;
+                height: 54px;
+                grid-column: 3/ 4;
+                border-radius: 5px;
+                background: #E5E5E5;
+                color: rgba(51, 51, 51, 0.5);
+                border: none;
+                outline: none;
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                text-indent: 20px;
+            }
+            &_num3 {
+                cursor: pointer;
+                width: 412px;
+                height: 54px;
+                grid-column: 5/ 6;
+                border-radius: 5px;
+                background: #E5E5E5;
+                color: rgba(51, 51, 51, 0.5);
+                border: none;
+                outline: none;
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                text-indent: 20px;
+            }
+            &_textarea {
+                cursor: pointer;
+                width: 1274px;
+                height: 96px;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                border-radius: 5px;
+                background: #E5E5E5;
+                color: rgba(51, 51, 51, 0.5);
+                border: none;
+                outline: none;
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                text-indent: 20px;
+                padding-top: 20px;
+            }
+            &_button {
+                cursor: pointer;
+                grid-row: 4;
+                width: 640px;
+                height: 60px;
+                grid-column-start: 4;
+                grid-column-end: 6;
+                margin-left: -7px;
+                font-size: 12px;
+                line-height: 20px;
+                border: none;
+                outline: none;
+                background: $main_color__yellow;
+                border-radius: 5px;
+                box-sizing: border-box;
+                @include buttonTitle;
+                &:hover {
+                    background-color: #f3cd10;
+                }
+            }
+            &_info {
+                display: flex;
+                align-items: center;
+                grid-row: 4;
+                width: 640px;
+                height: 60px;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                & img {
+                    margin-left: 0;
+                    width: 590px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1295px) and (min-width: 770px) {
+    .contact {
+        &__wrapper {
+            &__form {
+                grid-template-columns: 107.5px 107.5px 107.5px 107.5px 107.5px 101.5px;
+                grid-template-rows: 65px 65px 65px 65px;
+                &_num1 {
+                    width: 206px;
+                }
+                &_num2 {
+                    width: 206px;
+                }
+                &_num3 {
+                    width: 206px;
+                }
+                &_textarea {
+                    width: 637px;
+                }
+                &_button {
+                    width: 320px;
+                }
+                &_info {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 320px) {
+    .contact {
+        height: 800px;
+        &__wrapper {
+            height: 90%;
+            &__subtitle {
+                margin-top: 70px;
+                height: 100px;
+                width: 215px;
+                font-size: 14px;
+            }
+            &__form {
+                padding-top: 15px;
+                grid-template-columns: 215px;
+                grid-template-rows: 65px 65px 65px 65px 129px 65px;
+                &_num1 {
+                    width: 215px;
+                    grid-column: 1;
+                    font-size: 12px;
+                }
+                &_num2 {
+                    width: 215px;
+                    grid-column: 1;
+                    font-size: 12px;
+                }
+                &_num3 {
+                    width: 215px;
+                    grid-column: 1;
+                    font-size: 12px;
+                }
+                &_textarea {
+                    cursor: pointer;
+                    width: 215px;
+                    height: 150px;
+                    grid-column: 1;
+                    grid-row: 4/ 5;
+                    font-size: 12px;
+                }
+                &_button {
+                    cursor: pointer;
+                    grid-row: 6;
+                    width: 215px;
+                    height: 60px;
+                    grid-column: 1;
+                    font-size: 10px;
+                    margin-left: 0;
+                }
+                &_info {
+                    display: none;
+                }
+            }
+        }
+    }
+}

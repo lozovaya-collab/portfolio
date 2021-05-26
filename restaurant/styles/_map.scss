@@ -1,0 +1,11 @@
+.map_block {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    & div {
+        filter: hue-rotate(184deg) !important;
+    }
+}

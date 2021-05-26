@@ -1,0 +1,146 @@
+.menu {
+    width: 100%;
+    height: 920px;
+    background-color: $main_color;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__info {
+            display: flex;
+            height: 720px;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            &_title {
+                @include Heading_2;
+                color: rgb(0, 0, 0);
+            }
+            &_subtitle {
+                width: 553px;
+                height: 76px;
+                text-align: center;
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0.6px;
+                margin-top: -30px;
+            }
+            &_rectangle {
+                width: 61.06px;
+                margin-top: -25px;
+                height: 5px;
+                background: $main_color__yellow;
+                border-radius: 50px;
+                margin-top: -39px;
+            }
+            &_header_of_menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: -19px;
+                &__item {
+                    width: 120px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid rgba(51, 51, 51, 0.2);
+                    font-family: "Open Sans", sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 18px;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+            &_menu {
+                display: grid;
+                grid-column-gap: 87px;
+                grid-row-gap: 30px;
+                grid-template-columns: 363px 363px 363px;
+                grid-template-rows: 36px 36px 36px 36px 36px 36px 36px;
+                &_item {
+                    height: 36px;
+                    width: 360px;
+                    &__title {
+                        @include Heading_2;
+                        font-size: 18px;
+                        color: rgb(0, 0, 0);
+                    }
+                    &__description {
+                        font-family: "Open Sans", sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: rgba(51, 51, 51, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1295px) and (min-width: 770px) {
+    .menu {
+        height: 1150px;
+        &__wrapper {
+            width: 100%;
+            &__info {
+                height: 980px;
+                width: 768px;
+                &_left_and_right {
+                    width: 0;
+                }
+                &_header_of_menu__item {
+                    width: 105px;
+                }
+                &_menu {
+                    grid-column-gap: 40px;
+                    grid-template-columns: 363px 363px;
+                    grid-template-rows: 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 320px) {
+    .menu {
+        height: 2200px;
+        &__wrapper {
+            height: 100%;
+            width: 90%;
+            &__info {
+                height: 90%;
+                &_subtitle {
+                    width: 333px;
+                }
+                &_header_of_menu {
+                    margin-top: 15px;
+                    flex-wrap: wrap;
+                    width: 278px;
+                    &__item {
+                        border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+                    }
+                }
+                &_menu {
+                    grid-row-gap: 36px;
+                    grid-template-columns: 276px;
+                    grid-template-rows: 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px;
+                    &_item {
+                        width: 300px;
+                        &__title {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

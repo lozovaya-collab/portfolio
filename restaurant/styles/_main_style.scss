@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 80em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1295px) and (min-width: 770px) {
+    .wrapper {
+        width: 768px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 320px) {
+    .wrapper {
+        width: 320px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+$main_color: #FFFF;
+$main_color__yellow: #E8C300;
+$line: rgba(255,
+255,
+255,
+0.2);
+@font-face {
+    font-family: 'Banny-BoldRound';
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    src: url('../assets/fonts/Banny-BoldRound.ttf') format("truetype");
+}
+
+@mixin menu {
+    color: $main_color;
+    font: {
+        family: "Open Sans", sans-serif;
+        style: normal;
+        weight: bold;
+        size: 0.75em;
+    }
+    line-height: 1.125em;
+}
+
+@mixin Caption {
+    color: $main_color;
+    font: {
+        family: "Open Sans", sans-serif;
+        style: normal;
+        weight: 700;
+        size: 0.75em;
+    }
+    letter-spacing: 0.375em;
+    line-height: 0.875em;
+}
+
+@mixin buttonTitle {
+    color: $main_color;
+    text-align: center;
+    font: {
+        family: "Open Sans", sans-serif;
+        style: normal;
+        weight: 700;
+        size: 0.75em;
+    }
+    line-height: 1.25em;
+}
+
+@mixin Heading_1 {
+    color: $main_color;
+    font: {
+        family: 'Banny-BoldRound';
+        size: 6em;
+    }
+    text-transform: uppercase;
+}
+
+@mixin Heading_2 {
+    font: {
+        family: 'Banny-BoldRound';
+        size: 2.25em;
+    }
+    text-transform: uppercase;
+    line-height: 133%;
+    text-transform: uppercase;
+}
