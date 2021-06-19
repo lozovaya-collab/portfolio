@@ -1,0 +1,36 @@
+* {
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  width: 100%;
+  height: 124px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #41c7b4), color-stop(35%, #ff7c4a));
+  background: linear-gradient(180deg, #41c7b4 35%, #ff7c4a 35%);
+}
+
+.header__top-line {
+  width: 100%;
+  height: 44px;
+  background-color: #000000;
+}
+
+.header__body {
+  width: 100%;
+  height: 80px;
+  background-color: #0F0F0F;
+}
+/*# sourceMappingURL=style.css.map */

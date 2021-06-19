@@ -1,0 +1,12 @@
+* {
+    margin: 0 auto;
+}
+
+$main_grey:#0F0F0F;
+$main_black: #000000;
+.wrapper {
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
