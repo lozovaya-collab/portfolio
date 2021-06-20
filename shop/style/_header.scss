@@ -1,15 +1,63 @@
 .header {
     width: 100%;
     height: 124px;
-    background: linear-gradient(180deg, #41c7b4 35%, #ff7c4a 35%);
+    // background: linear-gradient(180deg, $main_black 35.5%, $main_grey 35.5%);
+    & .wrapper {
+        flex-direction: column;
+    }
     &__top-line {
+        display: flex;
+        align-items: center;
+        color: $header_font;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
         width: 100%;
         height: 44px;
-        background-color: $main_black;
+        &_information {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 386px;
+            height: 16px;
+            &_first {
+                width: 16px;
+                height: 16px;
+                margin: 0;
+                &_phone-icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            &_second {
+                display: flex;
+                align-items: center;
+                margin-right: 0;
+                width: 355px;
+                &_phone {
+                    margin: 0;
+                    height: 15px;
+                    padding-right: 16px;
+                    border-right: 1px solid $header_font;
+                }
+                &_timetable {
+                    margin: 0;
+                    height: 15px;
+                    padding: 0 16px;
+                    border-right: 1px solid $header_font;
+                }
+                &_clock {
+                    margin: 0;
+                    height: 15px;
+                    padding-left: 16px;
+                }
+            }
+        }
     }
     &__body {
+        display: flex;
         width: 100%;
         height: 80px;
-        background-color: $main_grey;
     }
 }
