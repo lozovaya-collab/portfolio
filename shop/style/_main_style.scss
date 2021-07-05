@@ -6,6 +6,14 @@ $main_grey:#0F0F0F;
 $main_black: #000000;
 $main_white: #ffff;
 $header_font: #969696;
+$choice-link: #1F1F1F;
+a {
+    text-decoration: none;
+    &:hover {
+        color: $main_white;
+    }
+}
+
 @font-face {
     font-family: 'PlayfairDisplay-Bold';
     src: url('../assets/fonts/PlayfairDisplay-Bold.woff2'), url('../assets/fonts/PlayfairDisplay-Bold.woff'), url('../assets/fonts/PlayfairDisplay-Bold.ttf');
@@ -36,4 +44,9 @@ $header_font: #969696;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.choice__link {
+    background-color: $choice-link;
+    color: $main_white;
 }
