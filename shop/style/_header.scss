@@ -1,19 +1,25 @@
 .header {
     width: 100%;
     height: 124px;
-    // background: linear-gradient(180deg, $main_black 35.5%, $main_grey 35.5%);
+    background: linear-gradient(180deg, $main_black 35.5%, $main_grey 35.5%);
     & .wrapper {
         flex-direction: column;
     }
     &__top-line {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         color: $header_font;
         font-weight: normal;
         font-size: 12px;
         line-height: 16px;
         width: 100%;
         height: 44px;
+        &_logIn {
+            display: flex;
+            width: 131px;
+            margin: 0;
+        }
         &_information {
             margin: 0;
             display: flex;
@@ -35,11 +41,14 @@
                 align-items: center;
                 margin-right: 0;
                 width: 355px;
+                color: $header_font;
                 &_phone {
                     margin: 0;
                     height: 15px;
                     padding-right: 16px;
                     border-right: 1px solid $header_font;
+                    text-decoration: none;
+                    color: $header_font;
                 }
                 &_timetable {
                     margin: 0;
