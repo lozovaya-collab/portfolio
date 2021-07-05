@@ -4,7 +4,33 @@
 
 $main_grey:#0F0F0F;
 $main_black: #000000;
+$main_white: #ffff;
 $header_font: #969696;
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('../assets/fonts/PlayfairDisplay-Bold.woff2'), url('../assets/fonts/PlayfairDisplay-Bold.woff'), url('../assets/fonts/PlayfairDisplay-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../assets/fonts/PlayfairDisplay-Regular.woff2'), url('../assets/fonts/PlayfairDisplay-Regular.woff'), url('../assets/fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PostNoBillsJaffna-Bold';
+    src: url('../assets/fonts/PostNoBillsJaffna-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PTSans-Bold';
+    src: url('../assets/fonts/PTSans-Bold.woff2'), url('../assets/fonts/PTSans-Bold.woff'), url('../assets/fonts/PTSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url('../assets/fonts/PTSans-Regular.woff2'), url('../assets/fonts/PTSans-Regular.woff'), url('../assets/fonts/PTSans-Regular.ttf');
+}
+
 .wrapper {
     width: 57.81%;
     display: flex;

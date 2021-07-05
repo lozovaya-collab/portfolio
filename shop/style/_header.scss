@@ -19,18 +19,19 @@
             display: flex;
             width: 131px;
             margin: 0;
+            font-family: 'PTSans-Regular';
         }
         &_information {
             margin: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 386px;
+            width: 396px;
             height: 16px;
             &_first {
                 width: 16px;
                 height: 16px;
-                margin: 0;
+                margin: 0 15px 0 0;
                 &_phone-icon {
                     width: 16px;
                     height: 16px;
@@ -40,33 +41,43 @@
                 display: flex;
                 align-items: center;
                 margin-right: 0;
-                width: 355px;
+                width: auto;
                 color: $header_font;
                 &_phone {
                     margin: 0;
                     height: 15px;
-                    padding-right: 16px;
-                    border-right: 1px solid $header_font;
+                    padding-right: 13px;
                     text-decoration: none;
                     color: $header_font;
+                    font-family: 'PTSans-Regular';
                 }
                 &_timetable {
+                    width: 143px;
                     margin: 0;
                     height: 15px;
-                    padding: 0 16px;
-                    border-right: 1px solid $header_font;
+                    padding: 0 13px;
+                    font-family: 'PTSans-Regular';
                 }
                 &_clock {
                     margin: 0;
                     height: 15px;
-                    padding-left: 16px;
+                    padding-left: 13px;
+                    font-family: 'PTSans-Regular';
                 }
             }
         }
     }
     &__body {
         display: flex;
+        align-items: center;
         width: 100%;
         height: 80px;
+        &_logo {
+            font-family: 'PostNoBillsJaffna-Bold';
+            font-size: 36px;
+            line-height: 54px;
+            color: $main_white;
+            margin: 0;
+        }
     }
 }
